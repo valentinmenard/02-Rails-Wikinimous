@@ -1,0 +1,11 @@
+<h2>Voici votre article</h2>
+
+<%= link_to "retour", articles_path %>
+<h1><%= @article.title %></h1>
+
+<div>
+  Le contenu de votre article: <%= markdown_to_html(@article.content) %>
+</div>
+
+
+
